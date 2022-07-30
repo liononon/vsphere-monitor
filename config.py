@@ -1,7 +1,7 @@
 #coding=utf-8 
 # falcon
 endpoint = "vcenter" # 上报给 open-falcon 的 endpoint
-push_api = "http://127.0.0.1:6060/api/push" # 上报的 http api 接口
+push_api = "http://127.0.0.1:1988/v1/push" # 上报的 http api 接口
 interval = 60 # 上报的 step 间隔
 
 # vcenter
@@ -18,8 +18,8 @@ datastore_names = [] # 需要采集的 datastore ，留空则全部采集
 
 # vm
 vm_enable = True # 是否要采集虚拟机信息
-vm_names = [     # 需要采集的虚拟机，留空则全部采集
+vm_names = [     
             "vm1",
             "vm2",
             "vm3"
-           ]
+           ] # 需要采集的虚拟机，留空则全部采集
